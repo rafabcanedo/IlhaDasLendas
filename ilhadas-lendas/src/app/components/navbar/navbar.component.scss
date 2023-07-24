@@ -1,5 +1,7 @@
+@import "../../../styles/theme.scss";
+
 .navbar {
- background-color: #352f44;
+ background-color: $secondary;
  height: 80px;
  color: white;
 }
@@ -13,8 +15,24 @@
  flex: 1 1 auto;
 }
 
+.ul-nav {
+ display: flex;
+ align-items: center;
+ gap: 16px;
+ padding-right: 30px;
+}
+
+.li-nav {
+ text-decoration: none;
+ color: white;
+
+ &:hover {
+  color: $primary;
+ }
+}
+
 .button-nav {
-    background-color: #5c5470;
+    background-color: $button;
     border: none;
     color: white;
     padding: 15px 32px;
@@ -26,6 +44,6 @@
     cursor: pointer;
 
     &:hover {
-     background-color: #2a2438;
+     background-color: $hover;
     }
 }

@@ -5,6 +5,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button'
 import { MatIconModule } from '@angular/material/icon'
+import { NgIconsModule } from '@ng-icons/core';
+import { simpleTwitch, simpleInstagram, simpleYoutube, simpleDiscord, simpleTwitter, simpleTiktok } from '@ng-icons/simple-icons'
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -12,6 +14,7 @@ import { PlayersComponent } from './players/players.component';
 import { TeamsComponent } from './teams/teams.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +23,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     PlayersComponent,
     TeamsComponent,
     NavbarComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
@@ -28,6 +32,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     MatToolbarModule,
     MatButtonModule,
     MatIconModule,
+    NgIconsModule.withIcons({ simpleTwitch, simpleInstagram, simpleYoutube, simpleDiscord, simpleTwitter, simpleTiktok }),
   ],
   providers: [],
   bootstrap: [AppComponent]

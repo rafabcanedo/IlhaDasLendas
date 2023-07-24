@@ -1,0 +1,31 @@
+@import "../../styles/theme.scss";
+
+.main-home {
+
+}
+
+.container-image-home{
+ display: flex;
+ justify-content: center;
+}
+
+.image-home {
+
+}
+
+.intro-home {
+ color: $primary;
+}
+
+
+.box-title-home {
+ display: flex;
+ justify-content: center;
+}
+
+.title-home {
+ font-weight: 500;
+ font-size: 20px;
+ text-decoration: underline;
+ color: #7d50e4;
+}
