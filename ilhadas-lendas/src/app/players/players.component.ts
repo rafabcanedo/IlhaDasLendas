@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { PlayersDataService } from '../services/players-data.service';
 
 @Component({
   selector: 'app-players',
@@ -6,5 +7,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./players.component.scss']
 })
 export class PlayersComponent {
-
+  players: any;
+  constructor(private playersData:PlayersDataService)
+  {
+    this.playersData.players().subscribe((data) =>{
+      // console.log("data", data)
+      this.players=data;
+    })
+  }
 }

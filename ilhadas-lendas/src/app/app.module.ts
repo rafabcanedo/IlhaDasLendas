@@ -15,6 +15,7 @@ import { TeamsComponent } from './teams/teams.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FooterComponent } from './components/footer/footer.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -33,6 +34,7 @@ import { FooterComponent } from './components/footer/footer.component';
     MatButtonModule,
     MatIconModule,
     NgIconsModule.withIcons({ simpleTwitch, simpleInstagram, simpleYoutube, simpleDiscord, simpleTwitter, simpleTiktok }),
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

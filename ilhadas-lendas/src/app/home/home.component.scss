@@ -13,10 +13,55 @@
 
 }
 
-.intro-home {
- color: $primary;
+.test-overflow {
+ min-height: 100vh; // test
 }
 
+.intro-home {
+ display: flex;
+ justify-content: center;
+ flex-direction: column;
+ align-items: center;
+ color: $primary;
+ padding-top: 50px;
+}
+
+.container-button-home {
+ display: flex;
+ justify-content: center;
+ padding-top: 50px;
+}
+
+.title-lendas {
+ font-family: 'Poppins', sans-serif;
+ font-size: 75px;
+ font-weight: 900;
+}
+
+.sub-lendas {
+ font-family: 'Poppins', sans-serif;
+ font-size: 30px;
+ font-weight: 900;
+ margin-top: 20px;
+}
+
+.button-about {
+    background-color: $button;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 10px;
+    cursor: pointer;
+
+    &:hover {
+     background-color: #4e4761;
+    }
+}
 
 .box-title-home {
  display: flex;
