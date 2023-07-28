@@ -4,25 +4,18 @@
 
 <div *ngFor="let player of players" class="box-player">
  <div class="container-image-players">
- <img src={{player.image}} alt="perfil Jogador" class="image-players">
+ <img src={{player?.image}} alt="perfil Jogador" class="image-players">
  </div>
 
- <div>
+ <div class="box-infos">
  <span class="name-players">
   {{player.name}}
  </span>
+ <div class="infos-plus">
  <span class="role-players">{{player.role}}</span>
  <p class="team-players">{{player.team}}</p>
+ </div>
  </div>
 </div>
 
 </div>
-
-<!-- <ul>
-    <li *ngFor="let player of players">
-       {{player.name}}
-       <img src={{player.image}} alt="perfil Jogador" >
-       <p>{{player.role}}</p>
-       <p>{{player.team}}</p>
-    </li>
-</ul> -->

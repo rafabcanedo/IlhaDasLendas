@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { TeamsDataService } from '../services/teams-data.service';
 
 @Component({
   selector: 'app-teams',
@@ -6,5 +7,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./teams.component.scss']
 })
 export class TeamsComponent {
-
+  teams: any;
+  constructor(private teamsData:TeamsDataService)
+  {
+    this.teamsData.teams().subscribe((data) =>{
+      this.teams=data;
+    })
+  }
 }

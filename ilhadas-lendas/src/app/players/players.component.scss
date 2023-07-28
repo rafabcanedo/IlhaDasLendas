@@ -1,0 +1,61 @@
+@import "../../styles/theme.scss";
+
+.section-players {
+    display: grid;
+    flex-direction: column;
+    margin-top: 32px;
+    max-width: 100%;
+    // grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.box-player {
+ display: flex;
+ width: 290px;
+ flex-direction: column;
+ align-items: center;
+ border-radius: 10px;
+ // grid-template-columns: repeat(4, minmax(0, 1fr));
+
+ background-color: $secondary;
+}
+
+.container-image-players{
+
+}
+
+.image-players {
+ width: 130px;
+ height: 130px;
+}
+
+.box-infos {
+ display: flex;
+ flex-direction: column;
+}
+
+.name-players {
+ font-family: 'Poppins', sans-serif;
+ font-size: 18px;
+ font-weight: 600;
+ color: white;
+}
+
+.infos-plus {
+ display: flex;
+ flex-direction: row;
+ // justify-content: space-between;
+}
+
+.role-players {
+ font-family: 'Poppins', sans-serif;
+ font-size: 16px;
+ font-weight: 500;
+ color: white;
+}
+
+.team-players {
+ font-family: 'Poppins', sans-serif;
+ font-size: 16px;
+ font-weight: 500;
+ color: #42b883;
+}

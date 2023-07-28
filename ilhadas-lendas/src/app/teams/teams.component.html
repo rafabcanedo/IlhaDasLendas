@@ -1,1 +1,11 @@
 <p>teams works!</p>
+
+<div *ngFor="let team of teams" class="box-team">
+<div class="container-img-team">
+ <img src={{team?.image}} alt="perfil Time">
+</div>
+
+<div class="container-name-team">
+ <span>{{team.name}}</span>
+</div>
+</div>
