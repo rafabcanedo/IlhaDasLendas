@@ -1,21 +1,34 @@
-<p>players works!</p>
-
 <div class="section-players">
 
-<div *ngFor="let player of players" class="box-player">
- <div class="container-image-players">
- <img src={{player?.image}} alt="perfil Jogador" class="image-players">
+<div *ngFor="let player of players" class="container-player">
+ <div class="card-image-players">
+ <div class="box-image-player">
+ <a href="#">
+ <img src={{player?.image}} alt="perfil Jogador" class="img-players">
+ </a>
+ <div class="section-label">
+ <span class="span-name">Nome:</span>
+ <h2 class="name-players">{{player.name}}</h2>
  </div>
-
- <div class="box-infos">
- <span class="name-players">
-  {{player.name}}
- </span>
- <div class="infos-plus">
+ <div class="section-label">
+ <span class="span-rota">Rota:</span>
  <span class="role-players">{{player.role}}</span>
+ </div>
+ <div class="section-label">
+ <span class="span-time">Time:</span>
  <p class="team-players">{{player.team}}</p>
  </div>
  </div>
 </div>
+</div>
+
+ <div class="box-infos">
+ <span class="name-players">
+ </span>
+ <div class="infos-plus">
+ <span class="role-players"></span>
+ </div>
+ </div>
+
 
 </div>
